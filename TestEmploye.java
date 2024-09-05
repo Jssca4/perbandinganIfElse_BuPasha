@@ -2,20 +2,24 @@
 public class TestEmploye {
         public static void main(String[] args) {
         //name, salary
-        Employe e1 = new Employe("Jane", 350000.00);
-        Employe e2 = new Employe("Brandon", 200000.00);
-        Employe e3 = new Employe("Anna", 250000.00);
+        Employe e1 = new Employe("Jane", 3000.00);
+        Employe e2 = new Employe("Brandon", 3900.00);
+        Employe e3 = new Employe("Anna", 3000.00);
 
-       // Bandingkan gaji dan cetak karyawan dengan gaji tertinggi.
+       // Perbandingan gaji
        if (e1.getSalary() > e2.getSalary() && e1.getSalary() > e3.getSalary()) {
-        System.out.println("Jane memiliki gaji tertinggi..");
+        System.out.println("Jane memiliki gaji tertinggi.");
     } else if (e2.getSalary() > e1.getSalary() && e2.getSalary() > e3.getSalary()) {
-        System.out.println("Brandon memiliki gaji tertinggi..");
-    } else {
+        System.out.println("Brandon memiliki gaji tertinggi.");
+    } else if (e1.getSalary() == e2.getSalary() && e1.getSalary() == e3.getSalary()) {
+        System.out.println("Ke-3 karyawan memiliki gaji yang sama.");
+    }else {
         System.out.println("Anna memiliki gaji tertinggi.");
-    }
+    } 
+    
 
-        
+
+
 
 
         e1.print();
